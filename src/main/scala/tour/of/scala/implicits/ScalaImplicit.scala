@@ -1,17 +1,16 @@
 package tour.of.scala.implicits
 
 object ScalaImplicit extends App {
-  implicit def convert(a: Double): Int = {
-    println("inside this")
-    a.toInt
-  }
 
-  val value = 10
+  /** *********Implicit conversions ************/
+  implicit def convert(a: Double): Int = a.toInt
   implicit val multiplier = 3
-  //val res = multiply
-  val res1 = multiply(2.0)
-
   def multiply(implicit by: Int) = value * by
 
-  println(res1)
+  /** *********Implicit parameters ************/
+  val value = 10
+  println(result)
+  val result = multiply // implicit parameter passed here
+  val res = multiply(2.0) // Type conversions with implicit functions
+  println(res)
 }
