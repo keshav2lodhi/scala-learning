@@ -70,7 +70,6 @@ object Recursion extends App {
     if (n <= 1) 1
     else fibTailrec(2, 1, 1)
   }
-
   println(fibonacci(8))
 
 }
