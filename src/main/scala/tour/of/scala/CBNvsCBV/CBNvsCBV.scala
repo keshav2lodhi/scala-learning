@@ -22,6 +22,6 @@ object CBNvsCBV extends App {
   def printFirst(x: Int, y: => Int) = println(x)
 
   //printFirst(infinite(), 34)
-  printFirst(34, infinite()) // Call be name delays the execution of expression passed. Here not getting error b'coz the param y never used
+  printFirst(34, infinite()) // Call by name delays the execution of expression passed. Here not getting error b'coz the param y never used
 
 }
