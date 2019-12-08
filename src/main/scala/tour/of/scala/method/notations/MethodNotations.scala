@@ -72,7 +72,6 @@ object MethodNotations extends App {
        marry.apply(2) => "Marry watched Inception 2 times"
    */
 
-
   println((mary + "the Rockstar")())
   println((mary + "the Rockstar").apply())
 
